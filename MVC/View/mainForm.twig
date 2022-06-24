@@ -1,0 +1,29 @@
+<html lang="eng">
+<head>
+    <title></title>
+    <style>
+        #exitForm{
+            width: 150px;
+            margin: 0 auto;
+        }
+        #buttonExit{
+            width: 150px;
+            height: 35px;
+            font-size: 16px;
+            color: white;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+<form action="/" method="POST" id="exitForm">
+    <input id="buttonExit" type="submit" name="exitButton" value="Выйти">
+</form>
+<div>
+    Логин: {{ login }}
+</div> <br>
+<div>
+    Захэшированный пароль: {{ hashPassword }}
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html lang="eng">
+<head>
+    <title></title>
+    <style>
+        #authorizationForm{
+            width: 350px;
+            margin: 0 auto;
+        }
+        #registrationForm{
+            width: 350px;
+            margin: 0 auto;
+        }
+        .textBox{
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            margin-top: 4px;
+        }
+        .Button{
+            margin-left: 80px;
+            background-color: cadetblue;
+            width: 150px;
+            height: 35px;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form action="/?action=Authorization" method="POST" id="authorizationForm">
+        <label>
+            <input class="textBox" name="userAutLogin" placeholder="Логин" type="text">
+        </label> <br>
+        <label>
+            <input class="textBox" name="userAutPassword" placeholder="Пароль" type="text">
+        </label> <br>
+        <input class="Button" type="submit" name="authorizationButton" value="Войти">
+    </form>
+    <form action="/?action=Registration" method="POST" id="registrationForm">
+        <label>
+            <input class="textBox" name="userRegLogin" placeholder="Логин" type="text">
+        </label> <br>
+        <label>
+            <input class="textBox" name="userRegPassword" placeholder="Пароль" type="text">
+        </label> <br>
+        <input class="Button" type="submit" name="registrationButton" value="Регистрация">
+    </form>
+</div>
+</body>
+</html>
